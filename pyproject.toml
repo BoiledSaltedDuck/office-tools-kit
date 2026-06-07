@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "office-tools-kit"
+version = "1.0.0"
+description = "办公效率工具集 - Excel合并拆分、PDF合并，一行命令搞定"
+readme = "README.md"
+authors = [
+    {name = "Office Tools Team", email = "tools@office-tools.pro"}
+]
+license = {text = "MIT"}
+keywords = ["excel", "pdf", "merge", "split", "office", "办公"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business",
+    "Topic :: Utilities",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pandas>=1.0",
+    "openpyxl>=3.0",
+    "PyPDF2>=3.0",
+]
+
+[project.scripts]
+excel-merge = "office_tools.excel_merge:main"
+excel-split = "office_tools.excel_split:main"
+pdf-merge = "office_tools.pdf_merge:main"
+
+[tool.setuptools.packages.find]
+include = ["office_tools*"]

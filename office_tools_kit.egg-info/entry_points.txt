@@ -1,0 +1,4 @@
+[console_scripts]
+excel-merge = office_tools.excel_merge:main
+excel-split = office_tools.excel_split:main
+pdf-merge = office_tools.pdf_merge:main

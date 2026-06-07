@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+office_tools/__init__.py
+office_tools/excel_merge.py
+office_tools/excel_split.py
+office_tools/pdf_merge.py
+office_tools_kit.egg-info/PKG-INFO
+office_tools_kit.egg-info/SOURCES.txt
+office_tools_kit.egg-info/dependency_links.txt
+office_tools_kit.egg-info/entry_points.txt
+office_tools_kit.egg-info/requires.txt
+office_tools_kit.egg-info/top_level.txt
